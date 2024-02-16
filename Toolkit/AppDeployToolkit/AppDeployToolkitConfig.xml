@@ -24,7 +24,7 @@
 
     <!--Toolkit Options-->
     <Toolkit_Options>
-        <Toolkit_RequireAdmin>True</Toolkit_RequireAdmin>
+        <Toolkit_RequireAdmin>False</Toolkit_RequireAdmin>
         <!-- Specify if Administrator Rights are required. NB: Some functions won't work if this is set to false, such as deferral, blockexecution, file & registry RW access and potentially logging. -->
         <Toolkit_TempPath>$envTemp</Toolkit_TempPath>
         <!-- Path used to store temporary Toolkit files (with PSAppDeployToolkit as subdirectory), e.g. cache toolkit for cleaning up blocked apps. Normally you don't want this set to a path that is writable by regular users, this might lead to a security vulnerability. The default Temp variable for the LocalSystem account is C:\Windows\Temp. -->
@@ -46,7 +46,7 @@
         <!-- Specify if debug messages such as bound parameters passed to a function should be logged. -->
         <Toolkit_LogMaxSize>10</Toolkit_LogMaxSize>
         <!-- Specify maximum file size limit for log file in megabytes (MB). -->
-        <Toolkit_LogWriteToHost>True</Toolkit_LogWriteToHost>
+        <Toolkit_LogWriteToHost>False</Toolkit_LogWriteToHost>
         <!-- Specify if log messages should be written to the console. -->
     </Toolkit_Options>
     <!--Toolkit Options-->
